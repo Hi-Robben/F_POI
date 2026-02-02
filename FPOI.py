@@ -18,7 +18,7 @@ from catboost import CatBoostClassifier
 
 
 
-def calculate_f_test_select(data, labels, alpha=0.05):
+def calculate_f_test_select(data, labels, alpha=0.000001):
     """
     计算每个特征的 F值，并返回 F值超过 F临界值的特征索引。
 
